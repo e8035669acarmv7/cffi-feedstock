@@ -14,14 +14,16 @@ Summary: Foreign Function Interface for Python calling C code.
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/cffi-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/cffi-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/cffi-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/cffi-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/cffi-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/cffi-feedstock/branch/master)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/cffi-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/cffi-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/cffi-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/cffi-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/cffi-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/cffi-feedstock/branch/master)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/cffi/badges/version.svg)](https://anaconda.org/conda-forge/cffi)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/cffi/badges/downloads.svg)](https://anaconda.org/conda-forge/cffi)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-cffi-green.svg)](https://anaconda.org/conda-forge/cffi) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/cffi.svg)](https://anaconda.org/conda-forge/cffi) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/cffi.svg)](https://anaconda.org/conda-forge/cffi) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/cffi.svg)](https://anaconda.org/conda-forge/cffi) |
 
 Installing cffi
 ===============
