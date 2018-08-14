@@ -12,7 +12,7 @@ source:
     - 0001-Link-to-dl-library.patch
 
 build:
-  number: 0
+  number: 1
   script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
@@ -32,6 +32,8 @@ test:
   imports:
     - cffi
     - _cffi_backend
+  requires:
+    - openssl
 
 about:
   home: https://bitbucket.org/cffi/cffi
