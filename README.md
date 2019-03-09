@@ -13,6 +13,9 @@ Feedstock license: BSD 3-Clause
 
 Summary: Foreign Function Interface for Python calling C code.
 
+Cffi aims to allow users to call C code from Python without having to
+learn a 3rd language. It provides a convenient and reliable way to call
+compiled C code from Python using interface declarations written in C.
 
 
 Current build status
@@ -117,5 +120,6 @@ Feedstock Maintainers
 * [@goanpeca](https://github.com/goanpeca/)
 * [@inducer](https://github.com/inducer/)
 * [@jschueller](https://github.com/jschueller/)
+* [@mingwandroid](https://github.com/mingwandroid/)
 * [@ocefpaf](https://github.com/ocefpaf/)
 
