@@ -16,15 +16,13 @@ build:
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
-  host:
+  build:
     - {{ compiler('c') }}
   host:
     - python
     - pip
     - libffi  # [not win]
     - pycparser
-  build:
-    - {{ compiler('c') }}
   run:
     - python
     - libffi  # [not win]
