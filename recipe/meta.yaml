@@ -33,7 +33,10 @@ test:
     - cffi
     - _cffi_backend
   requires:
+    - pip
     - openssl
+  commands:
+    - pip check
 
 about:
   home: https://bitbucket.org/cffi/cffi
