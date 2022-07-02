@@ -1,14 +1,14 @@
---- setup.py	2017-04-06 11:19:47.311893148 +0100
-+++ setup.py	2017-04-06 11:20:07.639160636 +0100
+--- cffi-1.15.1.orig/setup.py	2022-06-30 13:38:43.000000000 -0300
++++ cffi-1.15.1/setup.py	2022-07-02 13:49:37.189516459 -0300
 @@ -1,6 +1,7 @@
- import sys, os
+ import sys, os, platform
  import subprocess
  import errno
 +import sysconfig
  
- 
- sources = ['c/_cffi_backend.c']
-@@ -74,6 +75,10 @@
+ # on Windows we give up and always import setuptools early to fix things for us
+ if sys.platform == "win32":
+@@ -113,6 +114,10 @@
      _ask_pkg_config(library_dirs,       '--libs-only-L', '-L', sysroot=True)
      _ask_pkg_config(extra_link_args,    '--libs-only-other')
      _ask_pkg_config(libraries,          '--libs-only-l', '-l')
