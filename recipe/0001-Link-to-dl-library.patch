@@ -14,7 +14,7 @@
      _ask_pkg_config(libraries,          '--libs-only-l', '-l')
 +    # This is needed for linking to 'dlopen', 'dlclose', 'dlsym' and 'dlerror'
 +    # from _cffi_backend.c for uClibc.
-+    if '-ldl' in ''.join(sysconfig.get_config_vars('LIBS')).split(' '):
++    if '-ldl' in (sysconfig.get_config_var('LIBS') or '').split(' '):
 +        libraries.append('dl')
  
  def use_homebrew_for_libffi():
