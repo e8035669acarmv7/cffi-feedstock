@@ -41,7 +41,7 @@ test:
     - _cffi_backend
   requires:
     - pip
-    - openssl
+    - openssl *
   commands:
     - pip check
 
