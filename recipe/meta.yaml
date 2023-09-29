@@ -44,6 +44,8 @@ test:
     - openssl *
   commands:
     - pip check
+    - python -X faulthandler -c "from cffi import FFI; print(FFI().dlopen('ucrtbase'))"  # [win]
+    - python -X faulthandler -c "from cffi import FFI; print(FFI().dlopen(None))"  # [not win]
 
 about:
   home: https://bitbucket.org/cffi/cffi
