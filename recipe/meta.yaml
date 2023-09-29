@@ -1,4 +1,4 @@
-{% set version = "1.15.1" %}
+{% set version = "1.16.0" %}
 
 package:
   name: cffi
@@ -6,14 +6,14 @@ package:
 
 source:
   url: https://pypi.io/packages/source/c/cffi/cffi-{{ version }}.tar.gz
-  sha256: d400bfb9a37b1351253cb402671cea7e89bdecc294e8016a707f6d1d8ac934f9
+  sha256: bcb3ef43e58665bbda2fb198698fcae6776483e0c4a631aa5647806c25e02cc0
   patches:
     - 0001-Link-to-dl-library.patch
     - 0002-setup-linux.patch
     - 0003-apple-api.patch  # [osx]
 
 build:
-  number: 5
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
